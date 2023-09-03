@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="loadingScreen">
+        <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+        </div>
+    </div>
+    <div id="sideNav">
+        <div id="navContent" class="p-4 d-flex flex-column justify-content-between">
+            <div class="list-v">
+                <ul>
+                    <li>Search</li>
+                    <li>Categories</li>
+                    <li>Area</li>
+                    <li>Ingredients</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p>
+                    Copyright Â© 2019 All Rights
+                    Reserved.
+                </p>
+            </div>
+        </div>
+        <div id="sideNavHeader">
+            <img src="imgs/logo.png" alt="Yummy">
+            <div id="navBtn">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+            <div class="d-flex flex-column">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <div id="search" class=" pt-3 w-75 justify-content-between m-auto container d-none">
+        <input type="text" class="form-control " id="searchByName" placeholder="Search By Name">
+        <input type="text" class="form-control " id="searchByFirst" placeholder="Search By First Letter">
+
+    </div>
+    <div class="container py-5">
+
+        <div class="row g-4 " id="foodList">
+
+        </div>
+        <div class="row d-none" id="selectedFoodData">
+
+        </div>
+    </div>
+    <form class="container py-5 d-none" id="form">
+        <div class="row g-4">
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-stretch"> <input type="text"
+                    placeholder="Enter Your Name" id="inputName" class="form-control align-self-start ">
+                <p class="d-none bg-danger-subtle rounded-2 p-2 my-2 " id="nameErr">Special characters and numbers not
+                    allowed</p>
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-stretch"> <input type="email" placeholder="Enter Your Email" id="inputEmail"
+                    class="form-control ">
+                <p class="d-none bg-danger-subtle rounded-2 p-2 my-2 " id="emailErr">Email not valid *exemple@yyy.zzz
+                </p>
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-stretch"> <input type="number" placeholder="Enter Your phone" id="inputPhone"
+                    class="form-control ">
+                <p class="d-none bg-danger-subtle rounded-2 p-2 my-2 " id="phoneErr">Enter valid Phone Number</p>
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-stretch"> <input type="number" placeholder="Enter Your Age" id="inputAge"
+                    class="form-control ">
+                <p class="d-none bg-danger-subtle rounded-2 p-2 my-2 " id="ageErr">Enter valid age</p>
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-stretch"> <input type="text" placeholder="Enter Your Password" id="inputPass"
+                    class="form-control ">
+                <p class="d-none bg-danger-subtle rounded-2 p-2 my-2 " id="passErr">Enter valid password *Minimum eight
+                    characters, at least one letter and one number:*</p>
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-stretch"><input type="text" placeholder="Repassword" id="inputRepass"
+                    class="form-control ">
+                <p class="d-none bg-danger-subtle rounded-2 p-2 my-2 " id="rePassErr">Enter valid repassword</p>
+            </div>
+
+        </div>
+        <div class="d-flex justify-content-center py-4"><button type="submit" class="btn btn-outline-danger disabled"
+                id="submitBtn">Submit</button></div>
+    </form>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
